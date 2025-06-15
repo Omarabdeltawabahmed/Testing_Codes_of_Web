@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+.camera {
+    width:650px;
+    height: 500px;
+    background-color: #eee;
+    margin: 50px auto;
+    position: relative;
+}
+.camera .one {
+    width: 500px;
+    height: 80px;
+    margin: 70px 70px;
+    background-color: #cccc;
+    position: absolute; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.one::before {
+content: "";
+    width: 60px;
+    height: 15px;
+    background-color: #607d8b;
+    position: absolute;
+    margin: -15px 28px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.one::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #e91e63;
+    position: absolute;
+    margin: -18px 37px;
+    border-radius: 5px;
+    }
+.camera .two {
+    width: 500px;
+    height: 80px;
+    margin: 375px 70px;
+    background-color: #cccc;
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.camera .three {
+    width: 500px;
+    height: 225px;
+    margin: 150px 70px;
+    background-color: #607d8b;
+    position: absolute;
+}
+.camera .four {
+    width: 300px;
+    height: 300px;
+    margin: 115px 160px;
+    background-color: #cecece;
+    position: absolute;
+    border: 20px solid #ededed;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px black;
+}
+    .camera .five {
+    width: 210px;
+    height: 210px;
+    margin: 160px 205px;
+    background-color: #358fb6;
+    position: absolute;
+    border-radius: 50%;
+    border: 28px solid black;
+}
+.five::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #68b8db;
+    position: absolute;
+    border-radius: 50%;
+    margin: 25px 23px;
+}
+.camera .six {
+    width: 130px;
+    height: 45px;
+    margin: 25px 240px;
+    background-color: #607d8b;
+    position: absolute;
+}
+.six::before {
+    content: "";
+    width: 150px;
+    height: 45px;
+    margin: 0px 6px;
+    background-color: #607d8b;
+    position: absolute;
+    transform: skew(20deg);
+    border-top-right-radius: 5px;
+}
+.six::after {
+    content: "";
+        width: 150px;
+        height: 45px;
+        margin: 0px -25px;
+        background-color: #607d8b;
+        position: absolute;
+        transform: skew(-20deg);
+        border-top-left-radius: 5px;
+}
+.camera .seven {
+    width: 130px;
+    height: 28px;
+    margin: 35px 241px;
+    background-color: #cecece;
+    position: absolute;
+    border-radius: 10px;
+}
+.camera .eight {
+    width: 60px;
+    height: 17px;
+    margin: 41px 275px;
+    background-color: #607d8b;
+    position: absolute;
+    border-radius: 10px;
+}
