@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is Our Book Store" />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <form action="" method="get" novalidate>
+      <div>
+        <h1>Book Store</h1>
+        <p>This is My Book Store, Welcome</p>
+      </div>
+      <input type="hidden" name="" id="" />
+      <br />
+      <div>
+        <label>Username</label>
+        <input
+          type="text"
+          required
+          placeholder="Username"
+          name="user"
+          readonly
+        />
+      </div>
+      <br />
+      <div>
+        <label>Subject</label>
+        <input type="text" name="subject" autofocus />
+      </div>
+      <br />
+      <div>
+        <label>Password</label>
+        <input
+          type="password"
+          required
+          placeholder="Write a Complex password"
+          name="pass"
+          minlength="10"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Email</label>
+        <input
+          type="email"
+          required
+          placeholder="Write a Valid Email"
+          value="o@nn.sa"
+          name="mail"
+          disabled
+        />
+      </div>
+      <br />
+      <div>
+        <label>Color</label>
+        <input type="color" name="color" />
+      </div>
+      <br />
+      <div>
+        <label>Range</label>
+        <input
+          type="range"
+          name="range"
+          min="0"
+          max="100"
+          step="20"
+          value="20"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Number</label>
+        <input
+          type="number"
+          name="number"
+          min="0"
+          max="100"
+          step="20"
+          value="40"
+        />
+      </div> 
+      <br>
+      <div>
+        <input id="win" type="radio" name="os" value="Windows" >
+        <label for="win">Windows</label>
+      </div>
+      <div>
+        <input id="lin" type="radio" name="os" value="Linux">
+        <label for="lin">Linux</label>
+      </div>
+      <div>
+        <input id="mac" type="radio" name="os" value="Mac">
+        <label for="mac">Mac</label>
+      </div>
+      <br />
+      <div>
+        <input id="win1" type="checkbox" name="os" value="Windows">
+        <label for="win1">Windows</label>
+      </div>
+      <div>
+        <input id="lin1" type="checkbox" name="os" value="Linux">
+        <label for="lin1">Linux</label>
+      </div>
+      <div>
+        <input id="mac1" type="checkbox" name="os" value="Mac">
+        <label for="mac1">Mac</label>
+      </div>
+      <br />
+
+      <label for="book">Choose Book: </label>
+      <select name="book" id="book">
+        <optgroup label="Romantic Books">
+            <option value="1">Book 1</option>
+            <option value="1">Book 2</option>
+            <option value="1">Book 3</option>
+        </optgroup>
+        <optgroup label="Police Books">
+            <option value="4" selected>Book 4</option>
+            <option value="5">Book 5</option>
+            <option value="6">Book 6</option>
+        </optgroup>
+      </select>
+      <hr>
+      <label for="text">Write a Text :</label><br>
+      <textarea name="text" id="text" cols="20" rows="5" placeholder="Text test">
+      </textarea>
+      <hr>
+
+      <div>
+        <label for="upload">Upload</label>
+        <input type="file" id="upload">
+      </div>
+<hr>
+      <div>
+        <label for="search">Search</label>
+        <input type="search" id="search">
+      </div>
+<hr>
+      <div>
+        <label>URL: </label>
+        <input type="url">
+      </div>
+<hr>
+      <div>
+        <label>Date</label>
+        <input type="date">
+      </div>
+<hr>
+      <div>
+        <label>Month</label>
+        <input type="month">
+      </div>
+<hr>
+      <div>
+        <label>Time</label>
+        <input type="time">
+      </div>
+<hr>
+      <label for="programming">Choose from list :</label>
+      <input list="programming" name="prog">
+      <datalist id="programming">
+        <option value="Python">
+        <option value="Php">
+        <option value="C#">
+        <option value="C">
+        <option value="C++">
+        <option value="Scala">
+      </datalist>
+<hr>
+      <br />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>
