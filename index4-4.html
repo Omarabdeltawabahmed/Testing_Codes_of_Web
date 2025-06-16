@@ -6,32 +6,49 @@
         <title>Book Store</title>
     </head>
     <body>
-    <form>
+    <form action="" method="get">
         <div>
             <h1>Book Store</h1>
             <p>This is My Book Store, Welcome</p>
         </div>
+        <input type="hidden" name="" id="">
         <br>
         <div>
             <label>Username</label>
-            <input type="text" required placeholder="Username">
+            <input type="text" required placeholder="Username" name="user">
         </div>
         <br>
         <div>
             <label>Subject</label>
-            <input type="text">
+            <input type="text" name="subject">
         </div>
         <br>
         <div>
             <label>Password</label>
-            <input type="password" required placeholder="Write a Complex password">
+            <input type="password" required placeholder="Write a Complex password" name="pass">
         </div>
         <br>
         <div>
             <label>Email</label>
-            <input type="email" required placeholder="Write a Valid Email" value="o@nn.sa">
+            <input type="email" required placeholder="Write a Valid Email" value="o@nn.sa" name="mail">
         </div>
         <br>
+        <div>
+            <label>Color</label>
+            <input type="color" name="color">
+        </div>
+        <br>
+        <div>
+            <label>Range</label>
+            <input type="range" name="range" min="0" max="100" step="20" value="20">
+        </div>
+        <br>
+        <div>
+            <label>Number</label>
+            <input type="number" name="number" min="0" max="100" step="20" value="40">
+        </div>
+        <br>
+        <input type="reset" value="Reset">
         <input type="submit" value="Send">
     </form>
     </body>
