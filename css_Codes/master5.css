@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent1 div {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin: 10px;
+    position: relative;
+    counter-increment: members-count;
+    box-shadow: 5px 5px 0px 0px #2196f3 , -5px -5px 0px 0px #e91e63 ;
+}
+
+.parent1 div::before {
+    content: attr(data-attribute);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+.parent1 div::after {
+    content: counter(members-count);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    left: 37px;
+    top: -10px;
+}
+
+/* ============================================= */
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 5px 20px;
+    border-bottom-right-radius: 5px 20px;
+    border-bottom-left-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px 0px black inset, -2px -2px 5px 0px black inset;
+}
+/* ============================================= */
+
+
+.parent2 {
+    width: 550px;
+    /* border: 2px solid #ccc; */
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.child1,
+.child2 {
+    width: 238px;
+    height: 300px;
+    background-color: #eee;
+    float :left;
+    padding: 20px;
+    position: relative;
+}
+
+.child2 {
+    margin-left: 50px;
+}
+
+.ch1 {
+    background-color: #03a9f4;
+    color: white;
+    text-align: center;
+    height: 45px;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+.ch2 {
+    text-align: center;
+    background-color: #dddddd;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 4.5;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+.child1::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #03a9f4;
+    right: -26px;
+    top: 0;
+}
+
+.child2::before {
+    content: "Or";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background-color: #03a9f4;
+    left: -37px;
+    top: 132px;
+    line-height: 1.5;
+}
